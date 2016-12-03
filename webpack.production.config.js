@@ -1,5 +1,6 @@
-const webpack = require('webpack');
-const path    = require('path');
+const webpack   = require('webpack');
+const path      = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   port: 3000
@@ -10,10 +11,16 @@ module.exports = {
     'webpack/hot/dev-server', './src/app.jsx'
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
+  plugins: [
+   new HtmlWebpackPlugin({
+     title: 'React, Redux',
+     filename: 'index.html'
+   })
+ ],
   module: {
     loaders: [
       {
@@ -31,12 +38,6 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new webpack.ProvidePlugin({
-  //     '$': 'jquery',
-  //     'jQuery': 'jquery'
-  //   })
-  // ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
@@ -46,6 +47,5 @@ module.exports = {
 		historyApiFallback: true,
     port: config.port,
 		progress: true,
-  },
-  devtool: 'source-map'
+  }
 };
