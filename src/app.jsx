@@ -2,16 +2,15 @@ import React from 'react';
 import {render} from 'react-dom';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
-import {reduxThunk} from 'redux-thunk';
 
 import Index from './components/index.jsx';
 import reducers from './reducers';
 import Style from './styles/main.scss';
 
-const storeWithMiddleware = applyMiddleware(reduxThunk)(createStore);
+const store = createStore(reducers);
 
 render (
-    <Provider store={storeWithMiddleware(reducers)}>
+    <Provider store={store}>
         <Index/>
     </Provider>,
     document.getElementById('root')
