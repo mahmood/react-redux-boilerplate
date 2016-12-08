@@ -31,7 +31,7 @@ $ yarn build
 ```
 
 ## 🗃 License
-Copyright (c) 2016 Mahmood Zamani. Licensed under [MIT](http://mit-license.org/).
+Copyright (c) 2016 Mahmood Zamani. Licensed under [MIT](http://imahmoodz.mit-license.org/).
 
 ```
 The MIT License (MIT)
