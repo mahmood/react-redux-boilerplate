@@ -4,8 +4,9 @@
     "description": "simple react-redux boilterplate for kick start",
     "repository": {
         "type": "git",
-        "url": "git://github.com/imahmoods/react-redux-boilerplate.git"
+        "url": "git://github.com/imahmoodz/react-redux-boilerplate.git"
     },
+    "author": "Mahmood Zamani",
     "scripts": {
         "start": "webpack-dev-server --inline --hot",
         "build": "webpack -p --config ./webpack.production.config.js",
