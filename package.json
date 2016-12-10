@@ -1,7 +1,7 @@
 {
     "name": "react-redux-boilerplate",
     "version": "0.1.0",
-    "description": "simple react-redux boilterplate for kick start",
+    "description": "simple react-redux boilerplate for kick start",
     "repository": {
         "type": "git",
         "url": "git://github.com/imahmoodz/react-redux-boilerplate.git"
