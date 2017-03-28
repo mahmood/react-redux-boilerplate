@@ -17,5 +17,5 @@ render (
             <Route path="/" component={Index}/>
         </Router>
     </Provider>,
-    document.getElementById('root')
+    document.querySelector('#root')
 );
